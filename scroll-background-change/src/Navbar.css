@@ -1,0 +1,15 @@
+.nav {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition-timing-function: ease-in;
+    transition: 0.5s;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.nav__blue {
+    background-color: blue;
+}
