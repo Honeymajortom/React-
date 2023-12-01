@@ -8,7 +8,7 @@ function App() {
 
   const GroupRef = useRef([]);
   
-  const onScroll=(e)=>{
+  const onScroll=(eL)=>{
     const styles = GroupRef.current
     .map((group,i)=>{
       const rect = group.getBoundingClientRect()
@@ -26,9 +26,14 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className='App'>
         {data.map((group,i)=>(
-          <div style={{height:'100vh'}}>
+          <div 
+          ref={(eL) =>(GroupRef.current[i]=eL)} 
+          style={{height:'100vh'}}
+          data-bgcolor={group.theme.background}
+          data-textcolor={group.theme.text}
+          >
             <h1>{group.title}</h1>
             <p>{group.paragraph}</p>
           </div>

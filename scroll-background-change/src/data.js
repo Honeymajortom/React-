@@ -2,7 +2,7 @@ export const data = [
     {
         title: "Title 1",
         paragraph: "Some words of whisdom.",
-        theme: {background: "lightpink", text: "black"},
+        theme: {background: "yellow", text: "black"},
     },
     {
         title: "Title 2",
@@ -12,6 +12,6 @@ export const data = [
     {
         title: "Title 3",
         paragraph: "Some vague conclusion where its upto you to deside where to go.",
-        theme: {background: "yellow", text: "white"},
+        theme: {background: "black", text: "white"},
     },
 ];
